@@ -37,7 +37,7 @@ export default function Navbar() {
           color="danger"
           fontWeight="extrabold"
         >
-          anushka
+          nk.
         </Heading>
 
         <Spacer />
@@ -58,21 +58,42 @@ export default function Navbar() {
             letterSpacing="widest"
             _hover={{ textDecoration: "underline" }}
           >
-            About
+           about
           </Link>
           <Link
             href="#portfolio"
             letterSpacing="widest"
             _hover={{ textDecoration: "underline" }}
           >
-            Portfolio
+            portfolio
+          </Link>
+          <Link
+            href="#skills"
+            letterSpacing="widest"
+            _hover={{ textDecoration: "underline" }}
+          >
+            skills
+          </Link>
+          <Link
+            href="#projects"
+            letterSpacing="widest"
+            _hover={{ textDecoration: "underline" }}
+          >
+            projects
+          </Link>
+          <Link
+            href="#blogs"
+            letterSpacing="widest"
+            _hover={{ textDecoration: "underline" }}
+          >
+            blogs
           </Link>
           <Link
             href="#contact"
             letterSpacing="widest"
             _hover={{ textDecoration: "underline" }}
           >
-            Contact
+            contact
           </Link>
         </HStack>
       </Flex>
@@ -86,6 +107,15 @@ export default function Navbar() {
             </Link>
             <Link href="#portfolio" _hover={{ textDecoration: "underline" }}>
               Portfolio
+            </Link>
+            <Link href="#skills" _hover={{ textDecoration: "underline" }}>
+              Skills
+            </Link>
+            <Link href="#projects" _hover={{ textDecoration: "underline" }}>
+              Projects
+            </Link>
+            <Link href="#blogs" _hover={{ textDecoration: "underline" }}>
+              Blogs           
             </Link>
             <Link href="#contact" _hover={{ textDecoration: "underline" }}>
               Contact

@@ -30,7 +30,7 @@ export default function HeroSection() {
             color="danger"
             py={{ base: 2, md: 4 }}
           >
-            Anushka Churi
+            Neha Kulkarni
           </Heading>
 
           <Heading
@@ -89,10 +89,11 @@ export default function HeroSection() {
           p={{ base: 3, md: 8 }}
         >
           <Image
-            src="assets/my-notion-face-portrait.png"
+            src="avatar.jpg"
             alt="Illustration"
             maxW="400px"
             mx="auto"
+            borderRadius="full"
           />
         </Box>
       </Flex>

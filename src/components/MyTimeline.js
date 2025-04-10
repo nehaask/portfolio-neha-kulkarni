@@ -23,9 +23,9 @@ export default function MyTimeline() {
               </Timeline.Connector>
               <Timeline.Content>
                 <Timeline.Title>
-                  Software Verification Engineer Intern - MSA
+                Machine Learning Engineer Intern - Goodyear Rubber and Tire Company
                 </Timeline.Title>
-                <Timeline.Description>Aug 2024 - Dec 2024</Timeline.Description>
+                <Timeline.Description> 2024 - Dec 2024</Timeline.Description>
                 <Text textStyle="sm">
                   Automated data synchronization from structured datasets to the
                   TestRail platform by processing data with Pandas and updating
