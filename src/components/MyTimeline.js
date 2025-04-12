@@ -27,8 +27,6 @@ export default function ExperienceTimeline() {
           </Box>
         </Flex>
 
-
-      {/* Main Content */}
       <Box flex="1" bg="green" py={10} px={{ base: 6, md: 20 }}>
         {/* <Text fontSize="3xl" fontWeight="bold" mb={8}>
           My Experience
@@ -38,10 +36,28 @@ export default function ExperienceTimeline() {
           <Timeline.Root size="md" variant="outline">
             <Timeline.Item>
               <Timeline.Content flex="1" alignItems="flex-end">
-                <Timeline.Title>Goodyear Rubber and Tire Company</Timeline.Title>
+                <Timeline.Title>Machine Learning Intern - Goodyear Rubber and Tire Company</Timeline.Title>
                 <Timeline.Description>May 2024 - December 2024</Timeline.Description>
                 <Text fontSize="sm">
-                  Developed a weather-based road surface state prediction system and anonymized faces/license plates using YOLO. Worked with sensor-based analytics and ADAS systems.
+                - Designed and maintained a robust, scalable data pipeline leveraging AWS S3 to process and analyze 50 GB of weather API data efficiently handling Ĩ million daily data points
+                </Text>
+                <Text fontSize="sm">
+                - Implemented and evaluated supervised and unsupervised ML models using PyTorch and scikit-learn, achieving 15% accuracy improvement over baseline with 94% overall prediction accuracy
+                </Text>
+                <Text fontSize="sm">
+                - Optimized the model for edge computing, reducing inference time by 65% and successfully deployed on Raspberry Pi for real-time forecasting with 100ms latency
+                </Text>
+                <Text fontSize="sm">
+                - Developed a YOLOv8-based object detection model in PyTorch and OpenCV for real-time face and license plate anonymization. Trained the model from scratch on a GPU cluster, using NVIDIA CUDA for acceleration while maintaining 95% detection accuracy using a training set of 60,000+ images
+                </Text>
+                <Text fontSize="sm">
+                - Leveraged HPC cluster programming with SLURM for distributed parallel model training, significantly reduced training time by 40% across 2 A100 nodes
+                </Text>
+                <Text fontSize="sm">
+                - Utilized NVIDIA Jetson Orin for model training and inference, while optimizing edge deployment on Raspberry Pi devices, collaborating with cross-functional teams to integrate into production workflows
+                </Text>
+                <Text fontSize="sm">
+                - Created Test Harnesses for Tire Leak Detection models and automated Simulink testing frameworks. Automated 20+ test cases using Test Manager and achieving 100% model coverage across decision, condition, and MCDC metrics
                 </Text>
                 
               </Timeline.Content>
@@ -59,10 +75,13 @@ export default function ExperienceTimeline() {
                 <Timeline.Indicator />
               </Timeline.Connector>
               <Timeline.Content flex="1">
-                <Timeline.Title>Capstone – LiDAR Parking Detection</Timeline.Title>
+                <Timeline.Title>Graduate Teaching Assistant - CS for AP students</Timeline.Title>
                 <Timeline.Description>Spring 2025</Timeline.Description>
                 <Text fontSize="sm">
-                  Built a CARLA-based parking space detection system using LiDAR and 3D point cloud data.
+                - Facilitated hands-on coding labs, projects, and assignments in Python and Java while offering individualized support and mentoring to students facing challenges.
+                </Text>
+                <Text fontSize="sm">
+                - Guided 30 students through lab sessions, worked closely with the instructor to design supplementary materials, and actively participated in enhancing a holistic learning experience by clarifying coding concepts and assisting in debugging.
                 </Text>
               </Timeline.Content>
             </Timeline.Item>

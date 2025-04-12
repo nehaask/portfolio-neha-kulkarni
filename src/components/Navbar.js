@@ -9,6 +9,7 @@ import {
   IconButton,
   Stack,
   useDisclosure,
+  Button,
 } from "@chakra-ui/react";
 
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -97,13 +98,25 @@ export default function Navbar() {
           >
             contact
           </Link>
+          <Button
+          as="a"
+          href="/resume.pdf"
+          target="_blank"
+          colorScheme="green"
+          variant="subtle"
+          size="sm"
+          borderRadius="md"
+          fontWeight="medium"
+        >
+          resume
+        </Button>
         </HStack>
       </Flex>
 
       {/* Collapsible menu when isOpen=true (small screens only) */}
       {isOpen && (
         <Box pb={4} display={{ md: "none" }}>
-          <Stack as="nav" spacing={4}>
+          <Stack as="nav" spacing={5}>
             <Link href="#about" _hover={{ textDecoration: "underline" }}>
               About
             </Link>

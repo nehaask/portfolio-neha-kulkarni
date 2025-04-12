@@ -2,16 +2,14 @@ import React from "react";
 import {
   Box,
   Flex,
-  Heading,
   Text,
   Button,
   Stack,
-  Image,
   Container,
   Card,
   Avatar,
+  Badge,
 } from "@chakra-ui/react";
-import { TfiLinkedin, TfiGithub, TfiFacebook } from "react-icons/tfi";
 
 export default function Projects() {
     return (
@@ -48,7 +46,7 @@ export default function Projects() {
                 justify="space-between"
                 p={{ base: 10, md: 16 }}
               >
-                <Card.Root width="320px">
+                <Card.Root width="500px">
                   <Card.Body gap="2">
                     <Avatar.Root size="lg" shape="rounded">
                       <Avatar.Image src="https://picsum.photos/200/300" />
@@ -59,6 +57,13 @@ export default function Projects() {
                       This is the card body. Lorem ipsum dolor sit amet, consectetur
                       adipiscing elit. Curabitur nec odio vel dui euismod fermentum.
                       Curabitur nec odio vel dui euismod fermentum.
+
+                      <Stack direction="row">
+                        <Badge variant="outline">Outline</Badge>
+                        <Badge variant="solid">Solid</Badge>
+                        <Badge variant="subtle">Subtle</Badge>
+                        <Badge variant="surface">Surface</Badge>
+                      </Stack>
                     </Card.Description>
                   </Card.Body>
                   <Card.Footer justifyContent="flex-end">
@@ -66,6 +71,7 @@ export default function Projects() {
                     <Button>Join</Button>
                   </Card.Footer>
                 </Card.Root>
+                
               </Flex>
             </Container>
                   </Box>

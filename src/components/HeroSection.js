@@ -8,7 +8,6 @@ import {
   Stack,
   Image,
   Container,
-  IconButton,
 } from "@chakra-ui/react";
 import { FaLinkedin, FaGithubSquare} from "react-icons/fa";
 import { keyframes } from "@emotion/react";
@@ -59,6 +58,7 @@ export default function HeroSection() {
               w="2px"
               bg="gray.600"
               animation={blinkAnimation}
+              ml={1}
             />
           </Flex>
 
