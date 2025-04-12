@@ -22,10 +22,20 @@ export const customConfig = defineConfig({
         danger: { value: "{colors.green}" },
       },
     },
+    
     keyframes: {
       spin: {
         from: { transform: "rotate(0deg)" },
         to: { transform: "rotate(360deg)" },
+      },
+      fadeIn: {
+        from: { opacity: 0 },
+        to: { opacity: 1 },
+      },
+      blink: {
+        "0%": { opacity: 1 },
+        "50%": { opacity: 0 },
+        "100%": { opacity: 1 },
       },
     },
   },

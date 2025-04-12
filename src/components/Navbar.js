@@ -19,20 +19,22 @@ export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box
-      as="nav"
-      /* Example: if you defined "danger" in your custom config, you can do bg="danger" */
-      bg="white"
-      color="black"
-      boxShadow="sm"
-      px={{ base: 4, md: 8 }}
-      py={4}
-    >
+      <Box
+        as="nav"
+        position="sticky"
+        top="0"
+        zIndex="sticky"
+        bg="white"
+        color="black"
+        boxShadow="sm"
+        px={{ base: 4, md: 8 }}
+        py={4}
+      >
       <Flex align="center">
         {/* Logo/Name on the left */}
         <Heading
           as="h1"
-          size="md"
+          size="lg"
           letterSpacing="widest"
           color="danger"
           fontWeight="extrabold"
@@ -61,11 +63,11 @@ export default function Navbar() {
            about
           </Link>
           <Link
-            href="#portfolio"
+            href="#work"
             letterSpacing="widest"
             _hover={{ textDecoration: "underline" }}
           >
-            portfolio
+            work
           </Link>
           <Link
             href="#skills"
@@ -105,8 +107,8 @@ export default function Navbar() {
             <Link href="#about" _hover={{ textDecoration: "underline" }}>
               About
             </Link>
-            <Link href="#portfolio" _hover={{ textDecoration: "underline" }}>
-              Portfolio
+            <Link href="#work" _hover={{ textDecoration: "underline" }}>
+              Work
             </Link>
             <Link href="#skills" _hover={{ textDecoration: "underline" }}>
               Skills
