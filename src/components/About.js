@@ -34,7 +34,7 @@ export default function Projects() {
             fontSize="2xl"
             color="white"
           >
-            PROJECTS
+            LET'S CHAT
           </Text>
         </Box>
       </Flex>
@@ -44,7 +44,7 @@ export default function Projects() {
         <Container maxW="container.xl" py={{ base: 10, md: 16 }} minH="100vh">
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
             
-            <ProjectCard> </ProjectCard>
+            Contact and about me
             
           </SimpleGrid>
 

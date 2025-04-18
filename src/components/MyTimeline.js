@@ -22,7 +22,7 @@ export default function ExperienceTimeline() {
               fontSize="2xl"
               color="white"
             >
-              INTERNSHIPS
+              EXPERIENCE
             </Text>
           </Box>
         </Flex>
@@ -39,25 +39,13 @@ export default function ExperienceTimeline() {
                 <Timeline.Title>Machine Learning Intern - Goodyear Rubber and Tire Company</Timeline.Title>
                 <Timeline.Description>May 2024 - December 2024</Timeline.Description>
                 <Text fontSize="sm">
-                - Designed and maintained a robust, scalable data pipeline leveraging AWS S3 to process and analyze 50 GB of weather API data efficiently handling Ĩ million daily data points
+                • Developed YOLOv8-based object detection for edge deployment (Raspberry Pi), achieving 100ms latency with 95% precision—tailored for autonomous robotics perception stack.
                 </Text>
                 <Text fontSize="sm">
-                - Implemented and evaluated supervised and unsupervised ML models using PyTorch and scikit-learn, achieving 15% accuracy improvement over baseline with 94% overall prediction accuracy
+                • Built scalable S3 ingestion pipeline (50GB/day) and integrated PyTorch-based models with distributed training on NVIDIA A100 clusters using SLURM and multi-GPU training best practices
                 </Text>
                 <Text fontSize="sm">
-                - Optimized the model for edge computing, reducing inference time by 65% and successfully deployed on Raspberry Pi for real-time forecasting with 100ms latency
-                </Text>
-                <Text fontSize="sm">
-                - Developed a YOLOv8-based object detection model in PyTorch and OpenCV for real-time face and license plate anonymization. Trained the model from scratch on a GPU cluster, using NVIDIA CUDA for acceleration while maintaining 95% detection accuracy using a training set of 60,000+ images
-                </Text>
-                <Text fontSize="sm">
-                - Leveraged HPC cluster programming with SLURM for distributed parallel model training, significantly reduced training time by 40% across 2 A100 nodes
-                </Text>
-                <Text fontSize="sm">
-                - Utilized NVIDIA Jetson Orin for model training and inference, while optimizing edge deployment on Raspberry Pi devices, collaborating with cross-functional teams to integrate into production workflows
-                </Text>
-                <Text fontSize="sm">
-                - Created Test Harnesses for Tire Leak Detection models and automated Simulink testing frameworks. Automated 20+ test cases using Test Manager and achieving 100% model coverage across decision, condition, and MCDC metrics
+                • Deployed real-time inference models optimized for edge devices using quantization and model compression techniques.
                 </Text>
                 
               </Timeline.Content>
@@ -76,7 +64,7 @@ export default function ExperienceTimeline() {
               </Timeline.Connector>
               <Timeline.Content flex="1">
                 <Timeline.Title>Graduate Teaching Assistant - CS for AP students</Timeline.Title>
-                <Timeline.Description>Spring 2025</Timeline.Description>
+                <Timeline.Description>Spring 2024 </Timeline.Description>
                 <Text fontSize="sm">
                 - Facilitated hands-on coding labs, projects, and assignments in Python and Java while offering individualized support and mentoring to students facing challenges.
                 </Text>
@@ -88,13 +76,24 @@ export default function ExperienceTimeline() {
 
             <Timeline.Item>
               <Timeline.Content flex="1" alignItems="flex-end">
-                <Timeline.Title>Title</Timeline.Title>
-                <Timeline.Description>Dates</Timeline.Description>
+                <Timeline.Title>Capstone Project - Parking Spot Detection using LiDAR</Timeline.Title>
+                <Timeline.Description>Jan 2025 - Present</Timeline.Description>
                 <Text fontSize="sm">
-                Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Curabitur nec odio vel dui euismod fermentum.
-                Curabitur nec odio vel dui euismod fermentum.
+                • Leading the development of a 3D semantic segmentation system using CARLA simulator and LiDAR data for intelligent parking space detection in autonomous driving scenarios.
+{/* Designed and implemented an end-to-end perception pipeline:
+LiDAR → Ground Filtering → Coordinate Conversion → DBSCAN Clustering → Centroid Check → Polygon Test → HD Map JSON Output. */}
                 </Text>
+                <Text fontSize="sm">
+                Applied semantic filtering to isolate non-ground obstacle points; converted vehicle-local coordinates to global frame for mapping accuracy.
+                </Text>
+                {/* <Text fontSize="sm"> */}
+{/* Tuned DBSCAN parameters (eps=2m, min_samples=100) for optimal vehicle-scale detection in parking lot ranges up to 50m. */}
+{/* • Developed real-time occupancy detection logic by intersecting centroids with predefined parking spot polygons, achieving >92% accuracy in simulation. */}
+              {/* </Text> */}
+                <Text fontSize="sm">
+                • Delivered real-time output to HD map layers in JSON format, enabling downstream integration in autonomous navigation stack.
+              </Text>
+
               </Timeline.Content>
               <Timeline.Connector>
                 <Timeline.Separator />

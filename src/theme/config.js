@@ -15,6 +15,8 @@ export const customConfig = defineConfig({
     tokens: {
       colors: {
         green: "#A9CBB7",
+        white: "#FFFFFF",
+        black: "#000000",
       },
     },
     semanticTokens: {

@@ -8,8 +8,11 @@ import {
   Stack,
   Image,
   Container,
+  HStack,
+  Icon,
+  Link
 } from "@chakra-ui/react";
-import { FaLinkedin, FaGithubSquare} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import { keyframes } from "@emotion/react";
 
 export default function HeroSection() {
@@ -68,31 +71,17 @@ export default function HeroSection() {
             building applications.
           </Text>
 
-          {/* Social buttons */}
-          <Stack direction="row" spacing={4}>
-            <Button
-              as="a"
-              href="#"
-              leftIcon={<FaLinkedin />}
-              colorScheme="linkedin"
-              variant="solid"
-              transition="transform 0.3s ease"
-              _hover={{ transform: "scale(1.03)" }}
-            >
-              LinkedIn
-            </Button>
-            <Button
-              as="a"
-              href="#"
-              leftIcon={<FaGithubSquare />}
-              colorScheme="github"
-              variant="solid"
-              transition="transform 0.3s ease"
-              _hover={{ transform: "scale(1.03)" }}
-            >
-              GitHub
-            </Button>
-          </Stack>
+          <HStack spacing={6}>
+            <Link href="https://github.com/neha-kulkarni" isExternal>
+              <Icon as={FaGithub} w={8} h={8} />
+            </Link>
+            <Link href="https://linkedin.com/in/..." isExternal>
+              <Icon as={FaLinkedin} w={8} h={8}  />
+            </Link>
+            <Link href="mailto:neha@email.com">
+              <Icon as={FaEnvelope} w={8} h={8}  />
+            </Link>
+          </HStack>
         </Box>
 
         {/* Right side: illustration */}
