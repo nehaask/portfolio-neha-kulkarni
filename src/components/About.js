@@ -3,16 +3,9 @@ import {
   Box,
   Flex,
   Text,
-  Button,
   Container,
-  Card,
-  Badge,
-  Image,
-  HStack,
   SimpleGrid,
-  Link,
 } from "@chakra-ui/react";
-import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
@@ -34,7 +27,7 @@ export default function Projects() {
             fontSize="2xl"
             color="white"
           >
-            LET'S CHAT
+            SAY HI !! 
           </Text>
         </Box>
       </Flex>

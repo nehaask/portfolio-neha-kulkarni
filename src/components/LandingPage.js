@@ -4,8 +4,6 @@ import {
   Flex,
   Heading,
   Text,
-  Button,
-  Stack,
   Image,
   Container,
   HStack,

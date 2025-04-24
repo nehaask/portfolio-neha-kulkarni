@@ -3,16 +3,7 @@ import {
   Box,
   Flex,
   Text,
-  Button,
-  Stack,
   Container,
-  Card,
-  Avatar,
-  Badge,
-  Image,
-  HStack,
-  Link,
-  Icon,
 } from "@chakra-ui/react";
 // import BlogPost from "./ItemBlogPost";
 
