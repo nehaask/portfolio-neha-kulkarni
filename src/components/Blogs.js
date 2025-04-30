@@ -36,14 +36,7 @@ const newsItems = [
     description: "Use popular tools such as Plotly, Mermaid, and data frames.",
     link: "#",
   },
-  {
-    date: "Oct 24, 2023",
-    icon: FaChalkboardTeacher,
-    title: "Teach academic courses",
-    description:
-      "Embed videos, podcasts, code, LaTeX math, and even test students!",
-    link: "#",
-  },
+  
 ];
 
 export default function Blogs() {
@@ -58,7 +51,7 @@ export default function Blogs() {
             letterSpacing="widest"
             textAlign="center"
             fontSize="2xl"
-            color="green.500"
+            color="green"
           >
             BLOGS
           </Text>

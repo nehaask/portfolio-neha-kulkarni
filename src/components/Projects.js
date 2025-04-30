@@ -1,20 +1,13 @@
+// Projects.js
 import React from "react";
 import {
   Box,
   Flex,
   Text,
-  Button,
   Container,
-  Badge,
-  HStack,
-  SimpleGrid,
-  Link,
-  Heading,
-  
+  Grid,
 } from "@chakra-ui/react";
-
-import { FaGithub } from "react-icons/fa";
-import { Grid, GridItem } from "@chakra-ui/react";
+import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
@@ -53,81 +46,40 @@ const projects = [
 
 export default function Projects() {
   return (
-    <Flex minHeight="100vh" flexDirection={{ base: "column", md: "row" }}>
-      {/* Sidebar */}
-      <Flex direction="column" width="80px">
-        <Box
-          flex="1"
-          bg="green"
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-        >
-          <Text
-            transform="rotate(-90deg)"
-            fontWeight="bold"
-            letterSpacing="widest"
-            textAlign="center"
-            fontSize="2xl"
-            color="white"
-          >
-            PROJECTS
-          </Text>
-        </Box>
-      </Flex>
+    <Flex height="100vh">
+          {/* Sidebar */}
+          <Flex direction="column" width="80px" bg="green">
+            <Box flex="1" display="flex" justifyContent="center" alignItems="center">
+              <Text
+                transform="rotate(-90deg)"
+                fontWeight="bold"
+                letterSpacing="widest"
+                textAlign="center"
+                fontSize="2xl"
+                color="white"
+              >
+                PROJECTS
+              </Text>
+            </Box>
+          </Flex>
 
       {/* Main Content */}
       <Box flex="1" bg="green" py={10} px={{ base: 6, md: 20 }}>
         <Container maxW="container.xl" py={{ base: 10, md: 16 }} minH="100vh">
-        <Flex justify={{ base: "flex-start", md: "center" }}>
-            <Grid
-              templateColumns={{ base: "1fr", md: "1fr 1fr" }}
-              gap={6}
-              width="100%"
-              maxW={{ base: "360px", md: "full" }} // constrains width on mobile
-            >
+          <Flex justify={{ base: "flex-start", md: "center" }}>
+          <Grid
+            templateColumns={{ base: "1fr", md: "1fr 1fr" }}
+            gap={6}
+            width="100%"
+            maxW="full"
+            overflowY={{ base: "auto", md: "visible" }}
+            maxH={{ base: "calc(100vh - 200px)", md: "none" }} // restrict height on mobile
+          >
               {projects.map((project, index) => (
-                <Flex
-                key={index}
-                flexDirection="column"
-                overflow="hidden"
-                bg="white"
-                shadow="md"
-                borderRadius="md"
-                _hover={{ transform: "scale(1.02)", shadow: "xl" }}
-                transition="all 0.2s"
-                width="100%" // ensure full width of grid item
-                maxW={{ base: "360px", md: "full" }} // constrains width on mobile
-                >
-                  <GridItem key={index} height="100%">
-                  <Box p={4} spacingX={8} spacingY={6}>
-                    <Heading size="md" mb={2} color="black">
-                      {project.title}
-                    </Heading>
-                    <Text mb={4} color="black">
-                      {project.description}
-                    </Text>
-                    <HStack spacing={2} mb={4} flexWrap="wrap">
-                      {project.tech.map((tech, idx) => (
-                        <Badge key={idx}>{tech}</Badge>
-                      ))}
-                    </HStack>
-                    <Link href={project.link} isExternal>
-                      <Button
-                        colorScheme="purple"
-                        variant="outline"
-                        leftIcon={<FaGithub />}
-                      >
-                        View on GitHub
-                      </Button>
-                    </Link>
-                  </Box>
-                  </GridItem>
-                </Flex>
+                <ProjectCard key={index} project={project} />
               ))}
             </Grid>
-          </Flex> 
-
+          </Flex>
         </Container>
       </Box>
     </Flex>

@@ -27,7 +27,7 @@ export default function Projects() {
             fontSize="2xl"
             color="white"
           >
-            SAY HI !! 
+           CONTACT 
           </Text>
         </Box>
       </Flex>

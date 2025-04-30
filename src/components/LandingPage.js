@@ -52,6 +52,12 @@ export default function HeroSection() {
             >
               Software Engineer
             </Heading>
+          </Flex>
+
+          <Text mb={4}>
+            I am currently a university student at Rochester Institute of
+            Technology, working towards a Degree in Computer Science. I love
+            building applications.
             <Box
               as="span"
               display="inline-block"
@@ -61,12 +67,6 @@ export default function HeroSection() {
               animation={blinkAnimation}
               ml={1}
             />
-          </Flex>
-
-          <Text mb={4}>
-            I am currently a university student at Rochester Institute of
-            Technology, working towards a Degree in Computer Science. I love
-            building applications.
           </Text>
 
           <HStack spacing={6}>
