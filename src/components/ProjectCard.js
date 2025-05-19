@@ -26,6 +26,7 @@ const ProjectCard = ({ project }) => {
       transition="all 0.2s"
       width="100%"
       maxW={{ base: "360px", md: "full" }}
+      
     >
       {/* GitHub icon in the top-right */}
       <Link href={project.link} isExternal position="absolute" bottom={5} right={5}>
@@ -42,7 +43,7 @@ const ProjectCard = ({ project }) => {
           </Text>
           <HStack spacing={2} mb={4} flexWrap="wrap">
             {project.tech.map((tech, idx) => (
-              <Badge key={idx}>{tech}</Badge>
+              <Badge key={idx} color={"black"}>{tech}</Badge>
             ))}
           </HStack>
         </Box>

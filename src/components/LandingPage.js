@@ -8,9 +8,10 @@ import {
   Container,
   HStack,
   Icon,
-  Link
+  Link,
+  Button
 } from "@chakra-ui/react";
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope, FaEllipsisH } from 'react-icons/fa'
 import { keyframes } from "@emotion/react";
 
 export default function HeroSection() {
@@ -51,35 +52,44 @@ export default function HeroSection() {
               mr={1}
             >
               Software Engineer
+             <Box
+                  as="span"
+                  display="inline-block"
+                  h="1.2em"
+                  w="2px"
+                  bg="gray.600"
+                  animation={blinkAnimation}
+                  ml={2}
+                />
             </Heading>
           </Flex>
 
-          <Text mb={4}>
-            I am currently a university student at Rochester Institute of
-            Technology, working towards a Degree in Computer Science. I love
-            building applications.
-            <Box
-              as="span"
-              display="inline-block"
-              h="1.5em"
-              w="2px"
-              bg="gray.600"
-              animation={blinkAnimation}
-              ml={1}
-            />
-          </Text>
-
           <HStack spacing={6}>
-            <Link href="https://github.com/neha-kulkarni" isExternal>
+            <Link href="https://github.com/nehaask" isExternal>
               <Icon as={FaGithub} w={8} h={8} />
             </Link>
-            <Link href="https://linkedin.com/in/..." isExternal>
+            <Link href="https://linkedin.com/in/kulkarni-neha" isExternal>
               <Icon as={FaLinkedin} w={8} h={8}  />
             </Link>
-            <Link href="mailto:neha@email.com">
+            <Link href="mailto:kulkarneha5@gmail.com">
               <Icon as={FaEnvelope} w={8} h={8}  />
             </Link>
+            <Link href="mailto:kulkarneha5@gmail.com">
+              <Icon as={FaEllipsisH} w={8} h={8}  />
+            </Link>
           </HStack>
+          <Button
+          as="a"
+          href="/resume.pdf"
+          target="_blank"
+          colorScheme="green"
+          variant="subtle"
+          size="md"
+          borderRadius="md"
+          fontWeight="medium"
+        >
+          resume
+            </Button>
         </Box>
 
         {/* Right side: illustration */}

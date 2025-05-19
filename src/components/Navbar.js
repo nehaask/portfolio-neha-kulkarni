@@ -98,18 +98,6 @@ export default function Navbar() {
           >
             contact
           </Link>
-          <Button
-          as="a"
-          href="/resume.pdf"
-          target="_blank"
-          colorScheme="green"
-          variant="subtle"
-          size="sm"
-          borderRadius="md"
-          fontWeight="medium"
-        >
-          resume
-        </Button>
         </HStack>
       </Flex>
 

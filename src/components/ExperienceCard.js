@@ -14,6 +14,9 @@ import {
   DialogPositioner,
   CloseButton,
   Flex,
+  Image,
+  HStack,
+  Link,
 } from "@chakra-ui/react";
 
 const ExperienceCard = ({ experience, isLeft }) => {
@@ -23,35 +26,52 @@ const ExperienceCard = ({ experience, isLeft }) => {
     <Flex w="100%" justify={isLeft ? "flex-start" : "flex-end"} position="relative">
       {/* Card */}
       <Box
-        onClick={() => setIsOpen(true)}
-        p={4}
-        bg="white"
-        borderRadius="md"
-        shadow="md"
-        cursor="pointer"
-        _hover={{ bg: "gray.100" }}
-        w="45%"
-      >
-        <Text fontWeight="bold">{experience.title}</Text>
-        <Text fontSize="sm" color="gray.500">
-          {experience.organisation}
-        </Text>
-        <Text fontSize="sm" color="gray.500">
-          {experience.date}
-        </Text>
-      </Box>
+          onClick={() => setIsOpen(true)}
+          p={6}
+          bg="white"
+          borderRadius="md"
+          shadow="md"
+          cursor="pointer"
+          _hover={{ bg: "gray.100" }}
+          maxW="md"
+          w="100%"
+        >
+          <Flex align="center" mb={2}>
+            {experience.image && (
+              <Image
+                src={experience.icon}
+                alt={`${experience.organisation} logo`}
+                boxSize="40px"
+                objectFit="contain"
+                mr={4}
+                borderRadius="md"
+              />
+            )}
+            <Box>
+              <Text fontWeight="bold">{experience.title}</Text>
+              <Text fontSize="sm" color="black">
+                {experience.organisation}
+              </Text>
+              <Text fontSize="sm" color="black">
+                {experience.date}
+              </Text>
+            </Box>
+          </Flex>
+          
+          {experience.link && (
+            <Link
+              href={experience.link}
+              color="black"
+              fontSize="sm"
+              mt={2}
+              isExternal
+              display="inline-block"
+            >
+              Visit Website
+            </Link>
+          )}
+        </Box>
 
-      {/* Timeline Dot */}
-      <Box
-        position="absolute"
-        left="50%"
-        transform="translateX(-50%)"
-        bg="black"
-        w={4}
-        h={4}
-        borderRadius="full"
-        zIndex={2}
-      />
 
       {/* Dialog */}
       <Dialog.Root open={isOpen} onOpenChange={setIsOpen}>
